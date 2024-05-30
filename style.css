@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap');
+:root{--color1:#ff6b5b;--color2:#aaa69d;
+ --color3:#222f3e}
+ *{box-sizing:border-box;line-height:1.5em;font-family: 'Raleway', sans-serif;
+}
+ body{background:var(--color2);margin:0px;padding:0px;}
+ p{text-align: justify;font-size:14pt;}
+ li{font-size:14pt}
+ h1,h2,h3,h4{font-family: 'Playfair Display', serif;}
+ a{text-decoration: none;}
+ main{background: white;width:80%;margin:auto;padding:10px;}
+ header{background: var(--color1);padding:10px;color:white;}
+ .title{text-align: center;font-size: 5vw;margin:0px;}
+ .subtitle{text-align: center;font-basis:30%;}
+
+ nav{background: var(--color3);display:flex;}
+ nav h1{color:white;flex-basis:30%}
+ nav ul{flex-basis: 70%;text-align: right;}
+ nav li{display:inline-block;padding:8px;}
+ nav a{color:white;}
+
+ aside{position: fixed;top:250px;}
+ aside a{background-color:var(--color3);color:white;padding:10px;display:block;width:120px;margin-bottom:10px;}
+
+
+ main{}
+ .row{display:flex;column-gap:8px;}
+ .col{flex:1}
+ video{width:100%}
+ #gallery img{width:100%;height:400px;}
+#places img{width: 100%; height: 300px}
+#food img{width:100%;height:200px;}
+#food .col{text-align:center; border:thin solid;
+margin-bottom:10px; padding:10px }
+#places .col{text-align:center; border:thin solid;
+margin-bottom:10px; padding:10px }
+
+.content{padding:0px 10px}
+ #banner{}
+footer{background: var(--color3);padding:10px;color:white;}
+footer a{color:white;background: var(--color1);position: fixed;bottom:5px;right:5px;padding:10px;padding-bottom:5px;border-radius:50%;font-weight:bold;}
+
+@media only screen and (max-width:1200px){
+    .row{flex-direction: column;}
+    nav{flex-direction: column;}
+    nav ul{flex-basis:100%;text-align:center;margin:0px;padding:0px;}
+    nav h1{flex-basis:100%;text-align: center;}
+    nav li{display:inline-block;padding-right:2px;font-size:10pt;}
+    #gallery img{height:300px;}
+    #places img{height:250px;}
+    #food img{height:150px;}
+    #about h1{text-align:center;}
+    p{text-align: justify;font-size:12pt;}
+    li{font-size:12pt}
+}
